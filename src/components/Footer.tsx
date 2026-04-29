@@ -36,6 +36,18 @@ export function Footer() {
         </div>
 
         <div className="badge-strip mt-6 rounded-2xl p-4">
+          <div className="mx-auto max-w-5xl space-y-3 text-center text-xs leading-6 text-[var(--accent)]/70">
+            <p>
+              O jogocasinopt.com é um serviço editorial independente de comparação e pode ser financiado por comissões de referência dos sites apresentados.
+              A compensação recebida pode influenciar a ordem dos operadores. Outros fatores — como a nossa avaliação, a sua localização e a probabilidade de registo —
+              também podem afetar a classificação mostrada a utilizadores específicos. O jogocasinopt.com não lista necessariamente todos os casinos online disponíveis.
+            </p>
+            <p>
+              Ao longo deste site, partilhamos informações sobre bónus e promoções de vários casinos online. Cada oferta tem Termos e Condições próprios, disponíveis
+              nos sites dos operadores. Recomendamos que leia esses termos antes de efetuar qualquer depósito.
+            </p>
+          </div>
+
           <p className="mb-4 text-center text-xs font-black tracking-[0.14em] uppercase text-[var(--accent)]/80">
             Proibido a menores de 18. Jogue com responsabilidade. Moderação sempre.
           </p>
