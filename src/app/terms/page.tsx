@@ -7,42 +7,83 @@ export default function TermsPage() {
     <div className="min-h-screen">
       <Header />
       <main className="mx-auto max-w-4xl px-4 py-12">
-        <h1 className="gold-text text-4xl font-black">Terms &amp; Conditions</h1>
+        <h1 className="gold-text text-4xl font-black">Termos e Condições</h1>
         <p className="mt-4 text-[var(--accent)]/80">
-          These terms govern use of jogocasinopt.com and all content published by Jogo Casino PT.
+          Estes termos regulam a utilização do website jogocasinopt.com e todo o conteúdo publicado pela Jogo Casino PT.
         </p>
         <div className="mt-8 space-y-6 text-sm leading-7 text-[var(--accent)]/85">
           <section>
-            <h2 className="text-xl font-bold">Informational purpose</h2>
+            <h2 className="text-xl font-bold">Finalidade informativa</h2>
             <p>
-              Jogo Casino PT is an informational website and not a gambling operator. We review and compare third-party offers and may earn affiliate compensation.
+              A Jogo Casino PT é um website informativo e não é um operador de jogo. Analisamos e comparamos ofertas de terceiros e podemos receber compensação de afiliados.
             </p>
           </section>
           <section>
-            <h2 className="text-xl font-bold">Eligibility</h2>
+            <h2 className="text-xl font-bold">Elegibilidade</h2>
             <p>
-              This website is intended for users aged 18+ and for audiences in permitted regions. You are responsible for checking local laws before gambling online.
+              Este website destina-se a utilizadores com 18+ e a públicos em regiões permitidas. É da sua responsabilidade verificar a legislação local antes de jogar online.
             </p>
           </section>
           <section>
-            <h2 className="text-xl font-bold">Responsible gambling notice</h2>
+            <h2 className="text-xl font-bold">Aviso de jogo responsável</h2>
             <p>
-              Gamble responsibly. National Gambling Helpline: 0808 8020 133. Support links are provided for BeGambleAware, SRJ, and ICAD.
+              Jogue com responsabilidade. Linha Nacional de Apoio ao Jogo: 0808 8020 133. Disponibilizamos links de apoio para SRIJ e ICAD.
             </p>
-            <div className="mt-3 flex flex-wrap items-center gap-3">
-              <Image src="/18plus.png" alt="18 plus badge" width={48} height={26} />
-              <a href="https://www.srij.turismodeportugal.pt/pt" target="_blank" rel="noopener noreferrer">
-                <Image src="/srj.png" alt="SRJ logo" width={80} height={28} />
+            <div className="badge-strip mt-4 rounded-2xl p-4">
+              <div className="grid items-center justify-center gap-6 sm:grid-cols-3">
+                <a
+                  href="https://www.srij.turismodeportugal.pt/pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center"
+                >
+                  <Image src="/srj.png" alt="SRJ logo" width={120} height={42} />
+                  <span className="text-[11px] text-[var(--accent)]/70">Licenciado</span>
+                </a>
+
+                <div className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center">
+                  <Image src="/18-plus-br.png" alt="18+ Jogue com responsabilidade" width={170} height={52} />
+                  <span className="text-[11px] text-[var(--accent)]/70">Idade mínima</span>
+                </div>
+
+                <a
+                  href="https://www.icad.pt"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center"
+                >
+                  <Image src="/icad.png" alt="ICAD logo" width={120} height={42} />
+                  <span className="text-[11px] text-[var(--accent)]/70">Comportamento aditivo</span>
+                </a>
+              </div>
+            </div>
+            <div className="mt-3 rounded-xl bg-[#070703] px-4 py-3 text-center text-xs text-[var(--accent)]/70">
+              <span className="font-semibold">18+</span>
+              {" | "}
+              <span>Jogo responsável</span>
+              {" | "}
+              <a
+                href="https://www.srij.turismodeportugal.pt/pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="site-nav-link"
+              >
+                Licenciado pelo SRIJ
               </a>
-              <a href="https://www.icad.pt" target="_blank" rel="noopener noreferrer">
-                <Image src="/icad.png" alt="ICAD logo" width={80} height={28} />
+              {" | "}
+              <span>SOS Vício: 1414</span>
+              {" | "}
+              <a href="https://www.jogoresponsavel.pt" target="_blank" rel="noopener noreferrer" className="site-nav-link">
+                JogoResponsavel.pt
               </a>
+              {" | "}
+              <span>Autoexclusão</span>
             </div>
           </section>
           <section>
-            <h2 className="text-xl font-bold">Updates to terms</h2>
+            <h2 className="text-xl font-bold">Atualizações aos termos</h2>
             <p>
-              Jogo Casino PT may update these terms from time to time. Continued use of jogocasinopt.com indicates acceptance of revised terms.
+              A Jogo Casino PT pode atualizar estes termos ocasionalmente. A utilização contínua de jogocasinopt.com indica aceitação dos termos revistos.
             </p>
           </section>
         </div>

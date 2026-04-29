@@ -41,7 +41,7 @@ export function CasinoCard({ casino, mobileSuffix = "", isOnline = true }: Casin
 
       <div className="mb-4 flex items-end justify-between gap-4">
         <div>
-          <p className="text-sm text-[var(--accent)]/70">User votes</p>
+          <p className="text-sm text-[var(--accent)]/70">Votos</p>
           <p className="text-lg font-semibold">{casino.votes.toLocaleString()}</p>
         </div>
         <div className="text-right">
@@ -55,14 +55,14 @@ export function CasinoCard({ casino, mobileSuffix = "", isOnline = true }: Casin
       </div>
 
       <div className="mb-4 rounded-xl border border-[var(--primary-2)]/40 bg-gradient-to-br from-[#131305] to-[#1a1a07] p-3">
-        <p className="text-xs tracking-wide text-[var(--accent)]/70 uppercase">Exclusive bonus</p>
+        <p className="text-xs tracking-wide text-[var(--accent)]/70 uppercase">Bónus exclusivo</p>
         <p className="mt-1 text-sm font-bold">{casino.bonus}</p>
       </div>
 
       <span className="casino-btn block w-full rounded-xl px-4 py-3 text-center text-sm font-black tracking-wide uppercase">
-        Play Now
+        Jogar agora
       </span>
-      <p className="mt-2 text-center text-[11px] text-[var(--accent)]/60">18+ | T&amp;Cs apply</p>
+      <p className="mt-2 text-center text-[11px] text-[var(--accent)]/60">18+ | Termos aplicáveis</p>
     </a>
   );
 }

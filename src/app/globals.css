@@ -61,8 +61,12 @@ a {
 }
 
 .casino-card {
-  border: 1px solid color-mix(in srgb, var(--primary-2) 45%, #000 55%);
-  background: linear-gradient(180deg, #121206 0%, #0c0c05 100%);
+  border: 1px solid color-mix(in srgb, var(--primary-2) 55%, #000 45%);
+  background: linear-gradient(
+    180deg,
+    color-mix(in srgb, var(--primary) 78%, #ffffff 22%) 0%,
+    color-mix(in srgb, var(--primary) 92%, #ffffff 8%) 100%
+  );
 }
 
 .casino-card:hover {

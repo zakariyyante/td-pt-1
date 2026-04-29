@@ -25,54 +25,54 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
           <div className="relative mx-auto max-w-5xl text-center">
             <p className="inline-flex rounded-full border border-[var(--primary-2)]/50 bg-[#111106] px-4 py-2 text-xs font-bold tracking-wider uppercase">
-              Jogo Casino PT • Updated for {year}
+              Jogo Casino PT • Atualizado em {year}
             </p>
             <h1 className="mt-5 text-4xl leading-tight font-black sm:text-6xl">
-              Best UK Offers at <span className="gold-text gold-shimmer">Jogo Casino PT</span>
+              Melhores ofertas do Reino Unido na <span className="gold-text gold-shimmer">Jogo Casino PT</span>
             </h1>
             <p className="mx-auto mt-4 max-w-2xl text-base text-[var(--accent)]/80 sm:text-lg">
-              Compare trusted casinos with standout bonuses and fair terms. Fresh picks every week from our editorial team.
+              Compare casinos de confiança com bónus atrativos e termos justos. Seleções atualizadas semanalmente pela nossa equipa editorial.
             </p>
             <div className="mt-6 flex flex-wrap items-center justify-center gap-3 text-xs font-bold uppercase">
-              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">UKGC Licensed</span>
-              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">Editor Picks</span>
-              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">Fast Payouts</span>
+              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">Licença UKGC</span>
+              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">Escolhas do editor</span>
+              <span className="rounded-full border border-[var(--primary-2)]/50 bg-[var(--muted)] px-3 py-2">Pagamentos rápidos</span>
             </div>
           </div>
         </section>
 
         <section id="top-casinos" className="mx-auto max-w-6xl px-4 py-10">
-          <h3 className="gold-text text-3xl font-black sm:text-4xl">Top Rated Casino Sites This Week</h3>
-          <p className="mt-2 text-[var(--accent)]/75">Our rankings are refreshed weekly based on value, trust, and payout reliability.</p>
+          <h3 className="gold-text text-3xl font-black sm:text-4xl">Top casinos desta semana</h3>
+          <p className="mt-2 text-[var(--accent)]/75">As classificações são atualizadas semanalmente com base em valor, confiança e fiabilidade de pagamentos.</p>
           <div className="mt-6 grid gap-5 md:grid-cols-3">
             {regularCasinos.map((casino) => (
               <CasinoCard key={casino.id} casino={casino} />
             ))}
           </div>
           <div className="mt-6 rounded-xl border border-[var(--primary-2)]/35 bg-[#111106] p-4 text-sm text-[var(--accent)]/70">
-            Disclaimer: Offers and terms can change at any time. Always review full operator terms before playing.
+            Aviso: as ofertas e os termos podem mudar a qualquer momento. Consulte sempre os termos completos do operador antes de jogar.
           </div>
         </section>
 
         <section id="how-we-rank" className="my-8 border-y border-[var(--primary-2)]/30 bg-[#0b0b04] px-4 py-12">
           <div className="mx-auto grid max-w-6xl gap-5 md:grid-cols-2">
             <article className="rounded-2xl border border-[var(--primary-2)]/35 bg-[#111106] p-6">
-              <h4 className="mb-4 text-xl font-black">What makes our reviews different?</h4>
+              <h4 className="mb-4 text-xl font-black">O que torna as nossas análises diferentes?</h4>
               <ul className="space-y-2 text-sm text-[var(--accent)]/85">
-                <li>♠ We verify licensing and safety signals before listing any brand.</li>
-                <li>♦ We score terms quality, not just headline bonus size.</li>
-                <li>♣ We keep rankings current with routine editorial updates.</li>
+                <li>♠ Verificamos licenças e sinais de segurança antes de listar qualquer marca.</li>
+                <li>♦ Avaliamos a qualidade dos termos, não apenas o valor do bónus.</li>
+                <li>♣ Mantemos as classificações atualizadas com revisões editoriais regulares.</li>
               </ul>
             </article>
             <article className="rounded-2xl border border-[var(--primary-2)]/35 bg-[#111106] p-6">
-              <h4 className="mb-4 text-xl font-black">Responsible Gambling</h4>
+              <h4 className="mb-4 text-xl font-black">Jogo responsável</h4>
               <p className="mb-3 text-sm text-[var(--accent)]/80">
-                Set limits, take breaks, and seek support if needed. National Gambling Helpline: 0808 8020 133.
+                Defina limites, faça pausas e procure apoio se necessário. Linha Nacional de Apoio ao Jogo: 0808 8020 133.
               </p>
               <div className="flex flex-wrap gap-3 text-sm">
-                <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer" className="site-nav-link">BeGambleAware</a>
-                <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer" className="site-nav-link">GamCare</a>
-                <a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer" className="site-nav-link">Helpline &amp; GAMSTOP</a>
+                <a href="https://www.jogoresponsavel.pt" target="_blank" rel="noopener noreferrer" className="site-nav-link">JogoResponsavel.pt</a>
+                <a href="https://www.srij.turismodeportugal.pt/pt" target="_blank" rel="noopener noreferrer" className="site-nav-link">SRIJ</a>
+                <a href="https://www.icad.pt" target="_blank" rel="noopener noreferrer" className="site-nav-link">ICAD</a>
               </div>
             </article>
           </div>
@@ -86,47 +86,81 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
           <div className="grid gap-6 border-y border-[var(--primary-2)]/25 py-6 md:grid-cols-2">
             <div>
-              <h4 className="mb-2 font-semibold">Quick Links</h4>
+              <h4 className="mb-2 font-semibold">Links rápidos</h4>
               <ul className="space-y-1 text-sm text-[var(--accent)]/80">
                 <li><a href="#top-casinos">Top Casinos</a></li>
-                <li><a href="/privacy">Privacy Policy</a></li>
-                <li><a href="/terms">Terms &amp; Conditions</a></li>
+                <li><a href="/privacy">Política de Privacidade</a></li>
+                <li><a href="/terms">Termos e Condições</a></li>
               </ul>
             </div>
             <div>
               <h4 className="mb-2 font-semibold">Legal</h4>
-              <p className="text-sm text-[var(--accent)]/80">Jogo Casino PT is an independent informational comparison website.</p>
+              <p className="text-sm text-[var(--accent)]/80">A Jogo Casino PT é um site informativo independente de comparação.</p>
             </div>
             <div className="md:col-span-2">
-              <h4 className="mb-2 font-semibold">Disclaimer</h4>
+              <h4 className="mb-2 font-semibold">Aviso</h4>
               <p className="text-sm text-[var(--accent)]/80">
-                We may receive commission from partner links. Please gamble responsibly.
+                Podemos receber comissões através de links de parceiros. Jogue com responsabilidade.
               </p>
             </div>
           </div>
           <div className="badge-strip mt-6 rounded-2xl p-4">
-            <p className="mb-3 text-center text-xs font-black tracking-[0.2em] uppercase">Play Responsibly</p>
-            <div className="flex flex-wrap items-center justify-center gap-4">
-              <Image src="/18-plus-br.png" alt="18 plus badge" width={56} height={30} />
-              <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">
-                <Image src="/gambleaware.png" alt="BeGambleAware logo" width={112} height={30} />
+            <p className="mb-4 text-center text-xs font-black tracking-[0.14em] uppercase text-[var(--accent)]/80">
+              Proibido a menores de 18. Jogue com responsabilidade. Moderação sempre.
+            </p>
+
+            <div className="grid items-center justify-center gap-6 sm:grid-cols-3">
+              <a
+                href="https://www.srij.turismodeportugal.pt/pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center"
+              >
+                <Image src="/srj.png" alt="SRJ logo" width={120} height={42} />
+                <span className="text-[11px] text-[var(--accent)]/70">Licenciado</span>
               </a>
-              <a href="https://www.gamcare.org.uk" target="_blank" rel="noopener noreferrer">
-                <Image src="/gamcare.png" alt="GamCare logo" width={92} height={30} />
-              </a>
-              <a href="https://www.gamstop.co.uk" target="_blank" rel="noopener noreferrer">
-                <Image src="/gamestop.png" alt="GAMSTOP logo" width={92} height={30} />
-              </a>
-              <a href="https://www.srij.turismodeportugal.pt/pt" target="_blank" rel="noopener noreferrer">
-                <Image src="/srj.png" alt="SRJ logo" width={86} height={30} />
-              </a>
-              <a href="https://www.icad.pt" target="_blank" rel="noopener noreferrer">
-                <Image src="/icad.png" alt="ICAD logo" width={84} height={30} />
+
+              <div className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center">
+                <Image src="/18-plus-br.png" alt="18+ Jogue com responsabilidade" width={170} height={52} />
+                <span className="text-[11px] text-[var(--accent)]/70">Idade mínima</span>
+              </div>
+
+              <a
+                href="https://www.icad.pt"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="mx-auto flex max-w-[240px] flex-col items-center gap-2 text-center"
+              >
+                <Image src="/icad.png" alt="ICAD logo" width={120} height={42} />
+                <span className="text-[11px] text-[var(--accent)]/70">Comportamento aditivo</span>
               </a>
             </div>
           </div>
+
+          <div className="mt-3 rounded-xl bg-[#070703] px-4 py-3 text-center text-xs text-[var(--accent)]/70">
+            <span className="font-semibold">18+</span>
+            {" | "}
+            <span>Jogo responsável</span>
+            {" | "}
+            <a
+              href="https://www.srij.turismodeportugal.pt/pt"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="site-nav-link"
+            >
+              Licenciado pelo SRIJ
+            </a>
+            {" | "}
+            <span>SOS Vício: 1414</span>
+            {" | "}
+            <a href="https://www.jogoresponsavel.pt" target="_blank" rel="noopener noreferrer" className="site-nav-link">
+              JogoResponsavel.pt
+            </a>
+            {" | "}
+            <span>Autoexclusão</span>
+          </div>
           <p className="mt-6 text-center text-xs text-[var(--accent)]/70">
-            © {year} jogocasinopt.com. For informational purposes only.
+            © {year} jogocasinopt.com. Apenas para fins informativos.
           </p>
         </div>
       </footer>

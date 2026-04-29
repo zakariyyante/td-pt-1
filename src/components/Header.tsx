@@ -6,9 +6,9 @@ import { Menu, X } from "lucide-react";
 
 const links = [
   { href: "#top-casinos", label: "Top Casinos" },
-  { href: "#how-we-rank", label: "How We Rank" },
-  { href: "/privacy", label: "Privacy" },
-  { href: "/terms", label: "Terms" },
+  { href: "#how-we-rank", label: "Como classificamos" },
+  { href: "/privacy", label: "Privacidade" },
+  { href: "/terms", label: "Termos" },
 ];
 
 export function Header() {
@@ -34,7 +34,7 @@ export function Header() {
           href="#top-casinos"
           className="casino-btn hidden rounded-xl px-4 py-2 text-sm font-black tracking-wide uppercase md:inline-block"
         >
-          Claim Offers
+          Ver ofertas
         </a>
 
         <button
@@ -56,7 +56,7 @@ export function Header() {
               </Link>
             ))}
             <a href="#top-casinos" className="casino-btn rounded-xl px-4 py-2 text-center text-sm font-black uppercase">
-              Claim Offers
+              Ver ofertas
             </a>
           </div>
         </div>
