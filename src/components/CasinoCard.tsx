@@ -18,6 +18,7 @@ type CasinoCardProps = {
 export function CasinoCard({ casino, mobileSuffix = "", isOnline = true }: CasinoCardProps) {
   const href = `${casino.url}${mobileSuffix}`;
   const logoSrc = casino.logo.startsWith("/") ? casino.logo : logos[casino.logo] ?? logos.default;
+  const isTopBrandLogo = ["bwin", "Placard", "BacanaPlay"].includes(casino.name);
 
   return (
     <a
@@ -35,8 +36,14 @@ export function CasinoCard({ casino, mobileSuffix = "", isOnline = true }: Casin
       <div className="pointer-events-none absolute top-2 right-2 h-5 w-5 border-t-2 border-r-2 border-[var(--primary-2)] opacity-60" />
       <div className="pointer-events-none absolute bottom-2 left-2 h-5 w-5 border-b-2 border-l-2 border-[var(--accent)] opacity-60" />
 
-      <div className="mt-8 mb-5 flex h-16 items-center justify-center rounded-xl bg-[#0b0b04]">
-        <Image src={logoSrc} alt={`${casino.name} logo`} width={180} height={56} className="h-auto w-auto max-h-11" />
+      <div className={`mt-8 mb-5 flex items-center justify-center rounded-xl bg-[#0b0b04] ${isTopBrandLogo ? "h-20" : "h-16"}`}>
+        <Image
+          src={logoSrc}
+          alt={`Logótipo ${casino.name}`}
+          width={isTopBrandLogo ? 210 : 180}
+          height={isTopBrandLogo ? 68 : 56}
+          className={`h-auto w-auto ${isTopBrandLogo ? "max-h-14" : "max-h-11"}`}
+        />
       </div>
 
       <div className="mb-4 flex items-end justify-between gap-4">
