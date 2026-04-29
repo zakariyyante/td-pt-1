@@ -41,8 +41,8 @@ export default async function Home({ searchParams }: HomeProps) {
           </div>
         </section>
 
-        <section id="top-casinos" className="mx-auto max-w-6xl px-4 py-10">
-          <h3 className="gold-text text-3xl font-black sm:text-4xl">Top casinos desta semana</h3>
+        <section id="melhores-casinos" className="mx-auto max-w-6xl px-4 py-10">
+          <h3 className="gold-text text-3xl font-black sm:text-4xl">Melhores casinos desta semana</h3>
           <p className="mt-2 text-[var(--accent)]/75">As classificações são atualizadas semanalmente com base em valor, confiança e fiabilidade de pagamentos.</p>
           <div className="mt-6 grid gap-5 md:grid-cols-3">
             {regularCasinos.map((casino) => (
@@ -88,13 +88,13 @@ export default async function Home({ searchParams }: HomeProps) {
             <div>
               <h4 className="mb-2 font-semibold">Links rápidos</h4>
               <ul className="space-y-1 text-sm text-[var(--accent)]/80">
-                <li><a href="#top-casinos">Top Casinos</a></li>
+                <li><a href="#melhores-casinos">Melhores casinos</a></li>
                 <li><a href="/privacy">Política de Privacidade</a></li>
                 <li><a href="/terms">Termos e Condições</a></li>
               </ul>
             </div>
             <div>
-              <h4 className="mb-2 font-semibold">Legal</h4>
+              <h4 className="mb-2 font-semibold">Aviso legal</h4>
               <p className="text-sm text-[var(--accent)]/80">A Jogo Casino PT é um site informativo independente de comparação.</p>
             </div>
             <div className="md:col-span-2">

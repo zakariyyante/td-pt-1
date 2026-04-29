@@ -10,37 +10,37 @@ type CasinoInput = {
 export type Casino = CasinoInput & {
   id: string;
   rating: number;
-  badge?: "Best Bonus" | "Top Pick" | "Trending Now";
+  badge?: "Melhor Bónus" | "Escolha Principal" | "Em Alta";
 };
 
-const badges: Array<Casino["badge"]> = ["Best Bonus", "Top Pick", "Trending Now"];
+const badges: Array<Casino["badge"]> = ["Melhor Bónus", "Escolha Principal", "Em Alta"];
 
 const casinoInput: CasinoInput[] = [
   {
     name: "bwin",
     logo: "/bwin_logo.png",
-    bonus: "WELCOME OFFER AVAILABLE — SEE SITE",
+    bonus: "OFERTA DE BOAS-VINDAS — VER NO SITE",
     url: "https://www.bwin.pt/pt/sports",
     votes: 5634,
   },
   {
     name: "Placard",
     logo: "/placard_logo.png",
-    bonus: "EXCLUSIVE PROMO — LIMITED TIME",
+    bonus: "PROMOÇÃO EXCLUSIVA — POR TEMPO LIMITADO",
     url: "https://online.placard.pt/promoRedirect?key=ej0xMzc1ODQzOSZsPTEzNzQ2MDA2JnA9MTkzNjI%3D",
     votes: 5211,
   },
   {
     name: "BacanaPlay",
     logo: "/bacanaplay.png",
-    bonus: "100% BONUS + FREE SPINS — TERMS APPLY",
+    bonus: "BÓNUS 100% + RODADAS GRÁTIS — TERMOS APLICÁVEIS",
     url: "https://www.bacanaplay.com/",
     votes: 4987,
   },
   {
     name: "Nossa Aposta",
     logo: "/nossaaposta.png",
-    bonus: "MOBILE BONUS OFFERS — CHECK TERMS",
+    bonus: "OFERTAS PARA TELEMÓVEL — CONSULTE OS TERMOS",
     url: "https://example-affiliate.com/nossaaposta?ref=jogo",
     votes: 4512,
     isMobile: true,
@@ -48,7 +48,7 @@ const casinoInput: CasinoInput[] = [
   {
     name: "888 Casino",
     logo: "/888casino_logo.png",
-    bonus: "MOBILE EXCLUSIVE — SEE OFFER",
+    bonus: "EXCLUSIVO PARA TELEMÓVEL — VER OFERTA",
     url: "https://example-affiliate.com/888casino?ref=jogo",
     votes: 4026,
     isMobile: true,

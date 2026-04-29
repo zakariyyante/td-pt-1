@@ -23,7 +23,7 @@ export function CasinoCard({ casino, mobileSuffix = "", isOnline = true }: Casin
     <a
       href={href}
       target="_blank"
-      rel="noopener noreferrer sponsored"
+      rel="noopener noreferrer"
       className="casino-card casino-glow group relative block overflow-hidden rounded-2xl p-5 transition-transform"
     >
       {isOnline && casino.badge ? (

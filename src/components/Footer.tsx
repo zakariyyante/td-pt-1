@@ -21,9 +21,9 @@ export function Footer() {
             </ul>
           </div>
           <div>
-            <h4 className="mb-2 font-semibold">Legal</h4>
+            <h4 className="mb-2 font-semibold">Aviso legal</h4>
             <p className="text-sm text-[var(--accent)]/80">
-              Website informativo. Podemos receber comissões através de links de parceiros.
+              Site informativo. Podemos receber comissões através de links de parceiros.
             </p>
           </div>
           <div className="md:col-span-2">

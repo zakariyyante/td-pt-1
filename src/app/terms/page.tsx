@@ -9,19 +9,19 @@ export default function TermsPage() {
       <main className="mx-auto max-w-4xl px-4 py-12">
         <h1 className="gold-text text-4xl font-black">Termos e Condições</h1>
         <p className="mt-4 text-[var(--accent)]/80">
-          Estes termos regulam a utilização do website jogocasinopt.com e todo o conteúdo publicado pela Jogo Casino PT.
+          Estes termos regulam a utilização do site jogocasinopt.com e todo o conteúdo publicado pela Jogo Casino PT.
         </p>
         <div className="mt-8 space-y-6 text-sm leading-7 text-[var(--accent)]/85">
           <section>
             <h2 className="text-xl font-bold">Finalidade informativa</h2>
             <p>
-              A Jogo Casino PT é um website informativo e não é um operador de jogo. Analisamos e comparamos ofertas de terceiros e podemos receber compensação de afiliados.
+              A Jogo Casino PT é um site informativo e não é um operador de jogo. Analisamos e comparamos ofertas de terceiros e podemos receber compensação de afiliados.
             </p>
           </section>
           <section>
             <h2 className="text-xl font-bold">Elegibilidade</h2>
             <p>
-              Este website destina-se a utilizadores com 18+ e a públicos em regiões permitidas. É da sua responsabilidade verificar a legislação local antes de jogar online.
+              Este site destina-se a utilizadores com 18+ e a públicos em regiões permitidas. É da sua responsabilidade verificar a legislação local antes de jogar online.
             </p>
           </section>
           <section>

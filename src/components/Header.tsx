@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const links = [
-  { href: "#top-casinos", label: "Top Casinos" },
+  { href: "#melhores-casinos", label: "Melhores casinos" },
   { href: "#how-we-rank", label: "Como classificamos" },
   { href: "/privacy", label: "Privacidade" },
   { href: "/terms", label: "Termos" },
@@ -31,7 +31,7 @@ export function Header() {
         </nav>
 
         <a
-          href="#top-casinos"
+          href="#melhores-casinos"
           className="casino-btn hidden rounded-xl px-4 py-2 text-sm font-black tracking-wide uppercase md:inline-block"
         >
           Ver ofertas
@@ -39,7 +39,7 @@ export function Header() {
 
         <button
           type="button"
-          aria-label="Toggle navigation"
+          aria-label="Alternar navegação"
           onClick={() => setOpen((prev) => !prev)}
           className="rounded-lg border border-[var(--primary-2)]/60 p-2 md:hidden"
         >
@@ -55,7 +55,7 @@ export function Header() {
                 {link.label}
               </Link>
             ))}
-            <a href="#top-casinos" className="casino-btn rounded-xl px-4 py-2 text-center text-sm font-black uppercase">
+            <a href="#melhores-casinos" className="casino-btn rounded-xl px-4 py-2 text-center text-sm font-black uppercase">
               Ver ofertas
             </a>
           </div>

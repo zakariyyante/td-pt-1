@@ -82,7 +82,7 @@ export default function PrivacyPage() {
           </section>
           <section>
             <h2 className="text-xl font-bold">Contacto</h2>
-            <p>Para questões sobre esta política, contacte a Jogo Casino PT através do website jogocasinopt.com.</p>
+            <p>Para questões sobre esta política, contacte a Jogo Casino PT através do site jogocasinopt.com.</p>
           </section>
         </div>
       </main>

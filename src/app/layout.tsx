@@ -14,19 +14,18 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://jogocasinopt.com"),
-  title: "Jogo Casino PT - Trusted Casino Rankings UK 2026",
+  title: "Jogo Casino PT - Rankings de Casinos do Reino Unido 2026",
   description:
-    "Jogo Casino PT compares top casino bonuses, payout speed, and trust signals so UK players can choose safer offers faster.",
+    "A Jogo Casino PT compara bónus de casino, rapidez de pagamentos e sinais de confiança para ajudar jogadores do Reino Unido a escolherem melhores ofertas.",
   alternates: {
     canonical: "/",
   },
   openGraph: {
-    type: "website",
     url: "https://jogocasinopt.com",
     siteName: "Jogo Casino PT",
-    title: "Jogo Casino PT - Trusted Casino Rankings UK 2026",
+    title: "Jogo Casino PT - Rankings de Casinos do Reino Unido 2026",
     description:
-      "Discover editor-picked online casinos, updated weekly with bonus highlights, ratings, and responsible gambling guidance.",
+      "Descubra casinos escolhidos pelo editor, atualizados semanalmente com destaques de bónus, avaliações e orientações de jogo responsável.",
   },
 };
 
