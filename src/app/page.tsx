@@ -77,6 +77,60 @@ export default async function Home({ searchParams }: HomeProps) {
             </article>
           </div>
         </section>
+
+        <section className="mx-auto max-w-6xl px-4 pb-4">
+          <div className="mb-6">
+            <span className="inline-flex items-center rounded-full border border-[var(--primary-2)]/35 bg-[#0f0f06] px-3 py-1 text-[11px] font-black tracking-[0.22em] uppercase text-[var(--accent)]/85">
+              Metodologia
+            </span>
+            <h2 className="mt-4 text-3xl font-black sm:text-4xl">
+              Como <span className="gold-text">avaliamos</span> os casinos
+            </h2>
+          </div>
+
+          <div className="grid gap-4 md:grid-cols-4">
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5">
+              <p className="text-sm font-black">Licença SRIJ</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Verificamos a licença de cada operador no portal oficial do SRIJ. Sem licença válida, não aparece na lista.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5">
+              <p className="text-sm font-black">Bónus testados</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Testamos os bónus, requisitos de apostas, limites de levantamento e prazos de validade.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5">
+              <p className="text-sm font-black">Velocidade de levantamento</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Medimos tempos reais via MB WAY, multibanco e transferência bancária em Portugal.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5">
+              <p className="text-sm font-black">Qualidade dos jogos</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Avaliamos variedade de slots, casino ao vivo, fornecedores e experiência em telemóvel.
+              </p>
+            </article>
+          </div>
+
+          <div className="mt-4 grid gap-4 md:grid-cols-3">
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5 md:col-span-1">
+              <p className="text-sm font-black">Suporte ao cliente</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Testamos o suporte em português via chat, e-mail e telefone, medindo tempos de resposta.
+              </p>
+            </article>
+            <article className="rounded-2xl border border-[var(--primary-2)]/20 bg-[#0f0f06] p-5 md:col-span-1">
+              <p className="text-sm font-black">Segurança e RGPD</p>
+              <p className="mt-2 text-sm text-[var(--accent)]/75">
+                Verificamos SSL, políticas de privacidade conforme o RGPD e proteção de dados pessoais.
+              </p>
+            </article>
+            <div className="hidden md:block md:col-span-1" />
+          </div>
+        </section>
       </main>
 
       <footer className="site-footer mt-16 px-4 py-10">
