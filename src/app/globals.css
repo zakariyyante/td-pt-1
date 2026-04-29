@@ -1,8 +1,12 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --background: #0d0d05;
+  --foreground: #fffec8;
+  --primary: #151501;
+  --primary-2: #25f5fc;
+  --accent: #fffec8;
+  --muted: #26260d;
 }
 
 @theme inline {
@@ -12,15 +16,80 @@
   --font-mono: var(--font-geist-mono);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
-
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: var(--font-geist-sans), Arial, Helvetica, sans-serif;
+}
+
+a {
+  transition: all 0.2s ease;
+}
+
+.gold-text {
+  background: linear-gradient(135deg, var(--accent), var(--primary-2), var(--accent));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.gold-shimmer {
+  animation: gold-shimmer 3s linear infinite;
+  background-size: 220% 220%;
+}
+
+@keyframes gold-shimmer {
+  0% {
+    background-position: 0% 50%;
+  }
+  100% {
+    background-position: 200% 50%;
+  }
+}
+
+.casino-glow {
+  animation: casino-glow 2.4s ease-in-out infinite alternate;
+}
+
+@keyframes casino-glow {
+  from {
+    box-shadow: 0 0 0 rgba(37, 245, 252, 0.08), 0 0 20px rgba(37, 245, 252, 0.08);
+  }
+  to {
+    box-shadow: 0 0 0 rgba(37, 245, 252, 0.14), 0 0 32px rgba(37, 245, 252, 0.2);
+  }
+}
+
+.casino-card {
+  border: 1px solid color-mix(in srgb, var(--primary-2) 45%, #000 55%);
+  background: linear-gradient(180deg, #121206 0%, #0c0c05 100%);
+}
+
+.casino-card:hover {
+  border-color: var(--primary-2);
+  transform: translateY(-2px);
+}
+
+.casino-btn {
+  background: linear-gradient(135deg, var(--primary-2), #6afaff);
+  color: #031819;
+}
+
+.site-header {
+  background: color-mix(in srgb, var(--primary) 88%, black 12%);
+  border-bottom: 1px solid color-mix(in srgb, var(--primary-2) 40%, black 60%);
+}
+
+.site-nav-link:hover {
+  color: var(--primary-2);
+}
+
+.site-footer {
+  background: #090903;
+  border-top: 1px solid color-mix(in srgb, var(--primary-2) 40%, black 60%);
+}
+
+.badge-strip {
+  background: linear-gradient(90deg, #121206, #1a1a08, #121206);
+  border: 1px solid color-mix(in srgb, var(--primary-2) 35%, black 65%);
 }
