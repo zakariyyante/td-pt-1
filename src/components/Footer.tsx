@@ -38,7 +38,7 @@ export function Footer() {
         <div className="badge-strip mt-6 rounded-2xl p-4">
           <p className="mb-3 text-center text-xs font-black tracking-[0.2em] uppercase">Play Responsibly</p>
           <div className="flex flex-wrap items-center justify-center gap-4">
-            <Image src="/18plus.png" alt="18 plus badge" width={56} height={30} />
+            <Image src="/18-plus-br.png" alt="18 plus badge" width={56} height={30} />
             <a href="https://www.begambleaware.org" target="_blank" rel="noopener noreferrer">
               <Image src="/gambleaware.png" alt="BeGambleAware logo" width={112} height={30} />
             </a>
